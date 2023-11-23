@@ -1,0 +1,9 @@
+"use client";
+
+import { Provider } from "react-redux";
+import { store } from "../../redux/store/store";
+
+export function StoreProvider({ children }: { children: React.ReactNode }) {
+  console.log("in storee");
+  return <Provider store={store}>{children}</Provider>;
+}
